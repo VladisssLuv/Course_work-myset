@@ -8,13 +8,29 @@ namespace coursework
 	private:
 		struct node
 		{
-			T data;
+			const T data;
 			node* left;
 			node* right;
+			node* parent;
 		};
 		node* tree;
+		size_t size;
 	public:
-		Set() {};
+		Set() : tree(nullptr), size(0) {};
 		~Set() {};
+	public:
+		class Iterator
+		{
+		private:
+			const T* ptr_data;
+		public:
+			Iterator(): ptr_data(nullptr) {};
+			~Iterator() {};
+		public:
+			
+		};
+	public:
 	};
+
+	
 }
